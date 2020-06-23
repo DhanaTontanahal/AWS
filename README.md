@@ -88,6 +88,27 @@ y KeyMaterial --output text > first-keypair.pem
  
 
 
+#lAUNCHING httpd webserver on AWS
+Two ways:
+Way 1
+1.)Launch Ec2 instance
+2.)ssh to ec2 instance via cli and sexecute commands for installing and running httpd service
+
+
+Way 2:
+1.)While launching the AWS Ec2 instance , enter the commands in the USer Data field for the commands to be executed at the time of booting first time the ec2 instance.
+commands in USerData field:
+
+#!/bin/bash
+yum install -y httpd
+chkconfig httpd on
+curl http://169.254.169.254/latest/meta-data/instance-id > /var/www/html/index.html
+service httpd start
+
+
+
+
+
   
   
   
