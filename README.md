@@ -109,6 +109,16 @@ service httpd start
 
 
 
+  Elastic Load balancers:
+  
+  To balance the load on webservers or to evenly distrubute the traffic among the cluster of servers.
+  
+  Two types in AWS:
+  1.)Internet facing
+  2.)Internal 
+  
+  Internet facing load balancers need public ip to get acessed from out side the netwwork.
+  
   
   
   
