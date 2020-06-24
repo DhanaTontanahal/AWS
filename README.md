@@ -115,13 +115,22 @@ service httpd start
   
   Two types in AWS:
   1.)Internet facing
+  
   2.)Internal 
   
   Internet facing load balancers need public ip to get acessed from out side the netwwork.
   
   
   
-  
+Types of Load balancers:
+
+1.)Application Load Balancers
+
+2.)Network Load balancers
+
+3.)Classic Load balancers
+
+
     
 
 
